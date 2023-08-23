@@ -109,12 +109,12 @@ ul {
   border: 1px solid #f0a7a7;
 }
 
-.modal .follow {
+/* .modal .follow {
   padding-bottom: 20px !important;
 }
 .modal .follow span {
   font-size: 14px;
-}
+} */
 
 @media (max-width: 567px) {
   .modal {
@@ -220,6 +220,23 @@ ul {
 
 .all_cards .card-body {
   text-align: start;
+}
+
+.all_cards .card-body .card-text {
+  color: #00aeef;
+  padding-bottom: 7px;
+}
+
+.all_cards .card-body .request {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #000;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+.all_cards .card-body .request a {
+  color: #000;
 }
 
 /* End Cards 3 */
@@ -792,31 +809,63 @@ ul {
 /********************** END HOME PAGE *********************/
 /***********************************************************/
 
-
-
 /***********************************************************/
 /************* Start All Auctions PAGE *********************/
 /***********************************************************/
 .all_auctions {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    height: 100px;
-    padding-right: 15px;
-    background: #00aeef;
-  }
-  
-  .all_auctions p{
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .all_auctions a,
-  .all_auctions a:hover {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100px;
+  padding-right: 15px;
+  background: #00aeef;
+}
+
+.all_auctions p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.all_auctions a,
+.all_auctions a:hover {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/***********************************************************/
+/***************** End All Auctions PAGE ****************/
+/***********************************************************/
+
+/***********************************************************/
+/*********** Start Auction details PAGE *******************/
+/***********************************************************/
+/* Review 4 */
+.all_review {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.all_review .review {
+  width: 48%;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 4px rgba(110, 99, 99, 0.3);
+}
+
+.all_review .review img {
+  padding-left: 10px;
+}
+
+/***********************************************************/
+/*********** End Auction details PAGE *******************/
+/***********************************************************/
