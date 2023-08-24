@@ -235,8 +235,11 @@ ul {
   padding-top: 10px;
   justify-content: space-between;
 }
-.all_cards .card-body .request a {
-  color: #000;
+.all_cards .card-body .request button {
+  color: #ffffff;
+  border-radius: 5px;
+  background: #00aeef;
+  border: 1px solid #00aeef;
 }
 
 /* End Cards 3 */
@@ -839,33 +842,59 @@ ul {
 /***************** End All Auctions PAGE ****************/
 /***********************************************************/
 
+
 /***********************************************************/
 /*********** Start Auction details PAGE *******************/
 /***********************************************************/
-/* Review 4 */
-.all_review {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-between;
-  margin: 20px;
+.details {
+  padding: 20px 20px 10px;
 }
 
-.all_review .review {
-  width: 48%;
+.details p {
+  padding: 0 10px;
+}
+
+.review {
   padding: 10px;
   margin: 10px;
   display: flex;
-  align-items: center;
-  text-align: center;
   justify-content: space-between;
+}
+
+.review img {
+  height: 100px;
+  width: 100px;
+}
+.review p {
+  padding: 10px;
+  margin: 10px 5px;
+  flex: 1;
+  border-radius: 20px;
   box-shadow: 2px 2px 4px rgba(110, 99, 99, 0.3);
 }
 
-.all_review .review img {
-  padding-left: 10px;
+.review_comment textarea {
+  width: 97%;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.review_comment p {
+  height: 1px;
+  background: #f0f0f0;
+  margin: 0 25px 10px;
+}
+
+.review_comment button {
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin: 0 25px 10px;
+  background: #00aeef;
+  border: 1px solid #00aeef;
 }
 
 /***********************************************************/
 /*********** End Auction details PAGE *******************/
 /***********************************************************/
+
