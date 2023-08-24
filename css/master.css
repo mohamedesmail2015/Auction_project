@@ -904,9 +904,10 @@ ul {
 }
 
 .review_comment textarea {
-  width: 97%;
+  display: block;
+  width: 95%;
   padding: 10px;
-  margin: 20px;
+  margin: 20px auto;
   border-radius: 20px;
 }
 .review_comment p {
