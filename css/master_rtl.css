@@ -242,6 +242,23 @@ ul {
   border: 1px solid #00aeef;
 }
 
+@media (max-width: 1007px) {
+  .all_cards .card {
+    width: 30%;
+  }
+}
+@media (max-width: 650px) {
+  .all_cards .card {
+    width: 43%;
+  }
+}
+
+@media (max-width: 567px) {
+  .all_cards .card {
+    width: 85%;
+  }
+}
+
 /* End Cards 3 */
 
 /* Start hosting 3 */
@@ -502,13 +519,13 @@ ul {
 
 .all_contact .contact_text {
   width: 35%;
-  text-align: left;
+  text-align: right;
 }
 
 .all_contact .contact_text img {
   width: 190px;
   height: 55px;
-  text-align: left;
+  text-align: right;
 }
 
 .all_contact .contact_text p {
@@ -517,7 +534,7 @@ ul {
   line-height: 27px;
   letter-spacing: 0em;
   margin-top: 7px;
-  text-align: left;
+  text-align: right;
   color: #4d4d4f;
 }
 
@@ -594,7 +611,7 @@ ul {
 
 .contact form .first-name .left {
   width: 45%;
-  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .contact form .first-name .right {
@@ -620,7 +637,7 @@ ul {
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: right;
   color: #231f20;
 }
 
@@ -690,6 +707,7 @@ ul {
 
 .footer {
   position: relative;
+  margin-top: 10px;
   color: #ffffff;
   background-image: url(../imgs/BG.png);
 }
@@ -717,7 +735,7 @@ ul {
   font-weight: 600;
   line-height: 39px;
   letter-spacing: -0.03em;
-  text-align: left;
+  text-align: right;
 }
 
 .footer .box h5 {
@@ -726,7 +744,7 @@ ul {
   font-weight: 700;
   line-height: 28px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: right;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -738,7 +756,7 @@ ul {
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: right;
   margin-bottom: 12px;
   color: #ffffff;
 }
@@ -746,7 +764,14 @@ ul {
 .footer .box a .img_footer {
   width: 24px;
   height: 24px;
-  padding: 2px 4px 2px 0;
+  padding: 2px 0 2px 4px;
+}
+
+.footer .social_footer {
+  display: flex;
+}
+.footer .social_footer i {
+  margin-left: 15px;
 }
 
 .footer .box .input {
@@ -842,16 +867,31 @@ ul {
 /***************** End All Auctions PAGE ****************/
 /***********************************************************/
 
-
 /***********************************************************/
 /*********** Start Auction details PAGE *******************/
 /***********************************************************/
 .details {
-  padding: 20px 20px 10px;
+  padding: 20px 0 10px;
+}
+
+.details h2 {
+  font-family: Be Vietnam Pro;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  margin: 0 auto 20px;
+  text-align: center;
+  width: fit-content;
+  padding: 10px 40px;
+  color: #ffffff;
+  background: #00aeef;
+  transform: skewX(-15deg);
+  /* border-radius: 10px; */
 }
 
 .details p {
-  padding: 0 10px;
+  padding: 0;
 }
 
 .review {
@@ -862,39 +902,87 @@ ul {
 }
 
 .review img {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
 }
-.review p {
+.review .review_title {
   padding: 10px;
   margin: 10px 5px;
   flex: 1;
   border-radius: 20px;
   box-shadow: 2px 2px 4px rgba(110, 99, 99, 0.3);
 }
+.review .review_title p {
+  padding: 0;
+  margin-bottom: 5px;
+}
+.review .review_title .apply {
+  display: flex;
+  text-align: start;
+  justify-content: center;
+}
+.review .review_title .apply button {
+  color: #ffffff;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px 25px 10px;
+  margin: 0 10px;
+  background: #00aeef;
+  border: 1px solid #00aeef;
+}
 
-.review_comment textarea {
+.review_comment {
+  width: 95%;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+
+.review_comment input {
+  display: block;
   width: 97%;
   padding: 10px;
-  margin: 20px;
-  border-radius: 20px;
+  margin: 10px auto 20px;
+  outline: none;
+  border: none;
 }
+
 .review_comment p {
-  height: 1px;
-  background: #f0f0f0;
-  margin: 0 25px 10px;
+  padding: 0 15px;
+  text-align: end !important;
 }
 
 .review_comment button {
-  color: #ffffff;
+  color: #00aeef;
   border-radius: 5px;
-  padding: 10px 25px;
-  margin: 0 25px 10px;
-  background: #00aeef;
-  border: 1px solid #00aeef;
+  padding: 0;
+  background: #ffffff;
+  border: none;
+}
+
+.review_comment button i {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .review .review_title .apply {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    justify-content: start;
+  }
+  .review .review_title .apply button {
+    color: #ffffff;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px 25px 10px;
+    margin: 0;
+    background: #00aeef;
+    border: 1px solid #00aeef;
+  }
 }
 
 /***********************************************************/
 /*********** End Auction details PAGE *******************/
 /***********************************************************/
-
