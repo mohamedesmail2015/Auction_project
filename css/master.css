@@ -36,10 +36,36 @@ ul {
 /* End Global Rules */
 
 /* Start Header 1 */
+.navbar-nav{
+  flex: 1;
+}
 .navbar-brand img {
   width: 150px;
   height: 60px;
   border-radius: 10px;
+}
+
+.navbar_search {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex: 1;
+  padding: 3px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #f0f0f0 !important;
+}
+
+.navbar_search button,
+.navbar_search input {
+  border: none;
+  outline: none;
+  background: #f0f0f0 !important;
+}
+
+.navbar_search input {
+  flex: 1;
 }
 
 .nav-item .nav-link {
@@ -148,6 +174,10 @@ ul {
     padding: 0;
     margin: 0;
     width: 100px;
+  }
+
+  .navbar_search {
+    margin: 10px 0;
   }
 
   #nav_btn_ar,
