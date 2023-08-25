@@ -930,11 +930,13 @@ ul {
   padding: 0;
   margin-bottom: 5px;
 }
+
 .review .review_title .apply {
   display: flex;
   text-align: start;
-  justify-content: center;
+  justify-content: space-between;
 }
+
 .review .review_title .apply button {
   color: #ffffff;
   height: 40px;
