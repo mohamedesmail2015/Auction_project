@@ -716,7 +716,6 @@ ul {
     font-weight: bold;
   }
 }
-
 /* End Contact Us 5 */
 
 /* Start Footer */
@@ -995,6 +994,12 @@ ul {
     background: #00aeef;
     border: 1px solid #00aeef;
   }
+}
+
+.pagination {
+  margin: 20px auto !important;
+  align-items: center;
+  justify-content: center;
 }
 
 /***********************************************************/
