@@ -21,6 +21,13 @@ body {
   font-family: "Almarai", sans-serif;
   font-family: "Roboto", sans-serif;
   direction: rtl !important;
+  background: #f1f3f4;
+  width: 95%;
+  padding: 0;
+  margin: auto !important;
+  text-align: center !important;
+  justify-content: center !important;
+  box-shadow: 2px 2px 4px 2px rgba(110, 99, 99, 0.3);
 }
 
 a {
@@ -36,14 +43,23 @@ ul {
 /* End Global Rules */
 
 /* Start Header 1 */
+
 .navbar-nav {
   flex: 1;
+}
+
+.navbar-brand {
+  width: 350px;
+  align-items: start !important;
+  text-align: start !important;
+  justify-content: start !important;
 }
 
 .navbar-brand img {
   width: 150px;
   height: 60px;
   border-radius: 10px;
+  text-align: end !important;
 }
 
 .navbar_search {
@@ -70,6 +86,8 @@ ul {
 }
 
 .nav-item .nav-link {
+  text-align: start;
+  justify-content: start;
   font-size: 16px;
   font-weight: bold;
   line-height: 20px;
@@ -136,13 +154,6 @@ ul {
   border: 1px solid #f0a7a7;
 }
 
-/* .modal .follow {
-  padding-bottom: 20px !important;
-}
-.modal .follow span {
-  font-size: 14px;
-} */
-
 @media (max-width: 567px) {
   .modal {
     padding: 170px 20px 0 !important;
@@ -162,6 +173,10 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .navbar-brand {
+    width: 150px;
+  }
+
   .logo {
     padding: 0;
     margin: 0;
