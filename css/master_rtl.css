@@ -140,25 +140,45 @@ ul {
 
 .modal .login {
   color: #000000;
-  padding: 20px 0;
+  padding: 0 0 10px;
+  text-align: center;
 }
 
-.modal-form .modal-form-link {
-  color: #000000;
+.modal-form .modal-form-link,
+.modal-form .modal-form-link:focus {
   display: block;
   height: 40px;
   width: 70%;
   margin: 7px auto;
   padding: 7px;
   border-radius: 7px;
+  outline: none;
   border: 1px solid #f0a7a7;
 }
 
-@media (max-width: 567px) {
-  .modal {
-    padding: 170px 20px 0 !important;
-  }
+.modal-form .modal-form-textarea {
+  display: block;
+  width: 70%;
+  margin: 7px auto;
+  padding: 7px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #f0a7a7;
 }
+
+.modal-form .modal-form-button {
+  width: 100px !important;
+  margin: 7px;
+  padding: 7px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 7px;
+  outline: none;
+  color: #ffffff;
+  background: #0272e1;
+  border: 1px solid #0272e1;
+}
+
 
 /* media */
 @media (max-width: 1200px) {
@@ -205,7 +225,13 @@ ul {
   .modal {
     padding: 170px 20px 0 !important;
   }
+
+  .close_modal {
+    margin: 0 87% 0 0;
+    text-align: end !important;
+  }
 }
+
 
 /* End Header Page 1 */
 
@@ -758,11 +784,6 @@ ul {
   background-image: url(../imgs/BG.png);
 }
 
-.footer .shape_left {
-  position: absolute;
-  bottom: 40px;
-}
-
 .footer .all_boxs {
   width: 80%;
   margin: auto;
@@ -953,6 +974,7 @@ ul {
   border-radius: 50px;
 }
 .review .review_title {
+  text-align: start;
   padding: 10px;
   margin: 10px 5px;
   flex: 1;
@@ -966,7 +988,7 @@ ul {
 .review .review_title .apply {
   display: flex;
   text-align: start;
-  justify-content: center;
+  justify-content: space-between;
 }
 .review .review_title .apply button {
   color: #ffffff;
@@ -976,6 +998,9 @@ ul {
   margin: 0 10px;
   background: #00aeef;
   border: 1px solid #00aeef;
+}
+.review .review_title .apply button a {
+  color: #ffffff;
 }
 
 .review_comment {

@@ -143,12 +143,6 @@ ul {
   text-align: center;
 }
 
-.modal-form {
-  align-items: center !important;
-  text-align: center !important;
-  justify-content: cente !important;
-}
-
 .modal-form .modal-form-link,
 .modal-form .modal-form-link:focus {
   display: block;
@@ -787,11 +781,6 @@ ul {
   background-image: url(../imgs/BG.png);
 }
 
-.footer .shape_left {
-  position: absolute;
-  bottom: 40px;
-}
-
 .footer .all_boxs {
   width: 80%;
   margin: auto;
@@ -979,7 +968,9 @@ ul {
   width: 70px;
   border-radius: 50px;
 }
+
 .review .review_title {
+  text-align: start;
   padding: 10px;
   margin: 10px 5px;
   flex: 1;
