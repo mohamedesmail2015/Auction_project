@@ -179,7 +179,6 @@ ul {
   border: 1px solid #0272e1;
 }
 
-
 /* media */
 @media (max-width: 1200px) {
   #nav_btn_ar {
@@ -232,7 +231,6 @@ ul {
   }
 }
 
-
 /* End Header Page 1 */
 
 /* Start slide 2 */
@@ -240,6 +238,13 @@ ul {
 .carousel-item img {
   width: 100px;
   height: 450px;
+}
+
+@media (max-width: 991px) {
+  .carousel-item img {
+    width: 100px;
+    height: 200px;
+  }
 }
 
 /* End slide 2 */

@@ -238,6 +238,13 @@ ul {
   height: 450px;
 }
 
+@media (max-width: 991px) {
+  .carousel-item img {
+    width: 100px;
+    height: 200px;
+  }
+}
+
 /* End slide 2 */
 
 /* Start Cards 3 */
