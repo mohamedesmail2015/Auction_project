@@ -140,10 +140,18 @@ ul {
 .modal .login {
   color: #000000;
   padding: 0 0 10px;
+  text-align: center;
+}
+
+.modal-form {
+  align-items: center !important;
+  text-align: center !important;
+  justify-content: cente !important;
 }
 
 .modal-form .modal-form-link,
 .modal-form .modal-form-link:focus {
+  display: block;
   height: 40px;
   width: 70%;
   margin: 7px auto;
@@ -154,8 +162,9 @@ ul {
 }
 
 .modal-form .modal-form-textarea {
+  display: block;
   width: 70%;
-  margin: 7px;
+  margin: 7px auto;
   padding: 7px;
   border-radius: 7px;
   outline: none;
