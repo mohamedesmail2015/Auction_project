@@ -122,62 +122,6 @@ ul {
   color: #ffffff;
 }
 
-/* modal */
-.modal {
-  padding-top: 30px;
-}
-
-.modal-content {
-  border: none !important;
-  box-shadow: 0px 17px 44px 0px #b3b3b340 !important;
-}
-
-.close_modal {
-  margin: 0 0 0 92%;
-  text-align: end !important;
-}
-
-.modal .login {
-  color: #000000;
-  padding: 0 0 10px;
-  text-align: center;
-}
-
-.modal-form .modal-form-link,
-.modal-form .modal-form-link:focus {
-  display: block;
-  height: 40px;
-  width: 70%;
-  margin: 7px auto;
-  padding: 7px;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid #f0a7a7;
-}
-
-.modal-form .modal-form-textarea {
-  display: block;
-  width: 70%;
-  margin: 7px auto;
-  padding: 7px;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid #f0a7a7;
-}
-
-.modal-form .modal-form-button {
-  width: 100px !important;
-  margin: 7px;
-  padding: 7px 30px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 7px;
-  outline: none;
-  color: #ffffff;
-  background: #0272e1;
-  border: 1px solid #0272e1;
-}
-
 /* media */
 @media (max-width: 1200px) {
   #nav_btn_ar {
@@ -219,16 +163,6 @@ ul {
   }
 }
 
-@media (max-width: 567px) {
-  .modal {
-    padding: 170px 20px 0 !important;
-  }
-
-  .close_modal {
-    margin: 0 0 0 87%;
-    text-align: end !important;
-  }
-}
 /* End Header */
 
 /* Start slide 2 */
@@ -553,14 +487,28 @@ ul {
 .about_us {
   padding: 30px 0;
 }
+
 .about_us h2 {
-  padding-bottom: 20px;
+  font-family: Be Vietnam Pro;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  margin: 0 auto 30px;
   text-align: center;
-  justify-content: center;
+  width: fit-content;
+  padding: 10px 40px;
+  color: #ffffff;
+  background: #00aeef;
+  border-radius: 5px;
 }
 
 .about_us img {
   width: 100%;
+}
+
+.about_us_text {
+  text-align: start;
 }
 
 /* End about_us 4 */
@@ -571,19 +519,18 @@ ul {
 }
 
 .contact h2 {
-  font-family: Be Vietnam Pro;
   font-size: 21px;
   font-weight: 500;
   line-height: 27px;
   letter-spacing: 0.01em;
-  margin: 0 auto 20px;
+  margin: 10px auto 20px;
   text-align: center;
   width: fit-content;
   padding: 10px 40px;
-  color: #2772b0;
-  background: #e8f5fb;
-  transform: skewX(-15deg);
-  border-radius: 10px;
+  color: #ffffff;
+  background: #00aeef;
+  border-radius: 5px;
+  /* transform: skewX(-15deg); */
 }
 
 .all_contact {
@@ -1065,5 +1012,103 @@ ul {
 }
 
 /***********************************************************/
-/*********** End Auction details PAGE *******************/
+/************** End Auction details PAGE *******************/
+/***********************************************************/
+
+/***********************************************************/
+/******************* Start Register PAGE *******************/
+/***********************************************************/
+.login_form {
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.login_form .title {
+  padding: 30px;
+}
+
+.login_content {
+  width: 60%;
+  margin: 10px auto;
+}
+
+.login_content label {
+  display: block;
+  text-align: start;
+  margin: 15px 10px 10px;
+}
+
+.login_form input,
+.login_form select,
+.login_form textarea {
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #0075e3;
+}
+
+.login_form textarea {
+  height: 100px;
+}
+
+.login_form .login_button {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width: 100px !important;
+  margin: 15px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 7px;
+  outline: none;
+  color: #ffffff;
+  background: #0272e1;
+  border: 1px solid #0272e1;
+}
+
+.all_check {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  justify-content: start;
+}
+
+.all_check .form-check {
+  width: 130px;
+  margin: 0 5px 10px;
+  height: 50px;
+  padding: 7px;
+  text-align: start !important;
+  justify-content: start;
+  border-radius: 6px;
+  border: 1px solid #0272e1;
+}
+
+.all_check .form-check .form-check-input {
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  margin: 6px !important;
+}
+
+.all_check .form-check p {
+  margin: 3px !important;
+}
+
+@media (max-width: 768px) {
+  .login_content {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+/***********************************************************/
+/********************* End Register PAGE *******************/
 /***********************************************************/

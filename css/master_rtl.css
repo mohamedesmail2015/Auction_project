@@ -122,63 +122,6 @@ ul {
 #nav_btn_ar:hover {
   color: #ffffff;
 }
-
-/* modal */
-.modal {
-  padding-top: 40px;
-}
-
-.modal-content {
-  border: none !important;
-  box-shadow: 0px 17px 44px 0px #b3b3b340 !important;
-}
-
-.close_modal {
-  margin: 0 92% 0 0;
-  text-align: end !important;
-}
-
-.modal .login {
-  color: #000000;
-  padding: 0 0 10px;
-  text-align: center;
-}
-
-.modal-form .modal-form-link,
-.modal-form .modal-form-link:focus {
-  display: block;
-  height: 40px;
-  width: 70%;
-  margin: 7px auto;
-  padding: 7px;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid #f0a7a7;
-}
-
-.modal-form .modal-form-textarea {
-  display: block;
-  width: 70%;
-  margin: 7px auto;
-  padding: 7px;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid #f0a7a7;
-}
-
-.modal-form .modal-form-button {
-  width: 100px !important;
-  margin: 7px;
-  padding: 7px 30px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 7px;
-  outline: none;
-  color: #ffffff;
-  background: #0272e1;
-  border: 1px solid #0272e1;
-}
-
 /* media */
 @media (max-width: 1200px) {
   #nav_btn_ar {
@@ -217,17 +160,6 @@ ul {
     color: #6d7d93;
     border: 2px solid #1e9cd7;
     background: #ffffff;
-  }
-}
-
-@media (max-width: 567px) {
-  .modal {
-    padding: 170px 20px 0 !important;
-  }
-
-  .close_modal {
-    margin: 0 87% 0 0;
-    text-align: end !important;
   }
 }
 
@@ -579,8 +511,8 @@ ul {
   text-align: center;
   width: fit-content;
   padding: 10px 40px;
-  color: #2772b0;
-  background: #e8f5fb;
+  color: #ffffff;
+  background: #00aeef;
   transform: skewX(-15deg);
   border-radius: 10px;
 }
@@ -1061,4 +993,164 @@ ul {
 
 /***********************************************************/
 /*********** End Auction details PAGE *******************/
+/***********************************************************/
+
+/***********************************************************/
+/******************* Start Register PAGE *******************/
+/***********************************************************/
+.login_form {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.login_form .title {
+  padding: 30px;
+}
+
+.login_form input {
+  display: block;
+  height: 40px;
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #0075e3;
+}
+
+.login_form .modal-form-textarea {
+  display: block;
+  width: 70%;
+  margin: 7px auto;
+  padding: 7px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #0075e3;
+}
+
+.login_form .login_button {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width: 100px !important;
+  margin: 15px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 7px;
+  outline: none;
+  color: #ffffff;
+  background: #0272e1;
+  border: 1px solid #0272e1;
+}
+
+/***********************************************************/
+/********************* End Register PAGE *******************/
+/***********************************************************/
+
+/***********************************************************/
+/******************* Start Register PAGE *******************/
+/***********************************************************/
+.login_form {
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.login_form .title {
+  padding: 30px;
+}
+
+.login_content {
+  width: 60%;
+  margin: 10px auto;
+}
+
+.login_content label {
+  display: block;
+  text-align: start;
+  margin: 15px 15px 10px;
+}
+
+.login_form input,
+.login_form select {
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #0075e3;
+}
+
+.login_form textarea {
+  display: block;
+  height: 100px;
+  width: 100% !important;
+  margin: 10px !important;
+  padding: 10px !important;
+  justify-content: center;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #0075e3;
+}
+
+.login_form .login_button {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width: 100px !important;
+  margin: 15px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 7px;
+  outline: none;
+  color: #ffffff;
+  background: #0272e1;
+  border: 1px solid #0272e1;
+}
+
+.all_check {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  justify-content: start;
+}
+
+.all_check .form-check {
+  width: 130px;
+  margin: 0 5px 10px;
+  height: 50px;
+  padding: 7px;
+  text-align: start !important;
+  justify-content: start;
+  border-radius: 6px;
+  border: 1px solid #000;
+}
+
+.all_check .form-check .form-check-input {
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  margin: 6px !important;
+}
+
+.all_check .form-check p {
+  margin: 3px !important;
+}
+
+@media (max-width: 768px) {
+  .login_content {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+/***********************************************************/
+/********************* End Register PAGE *******************/
 /***********************************************************/
