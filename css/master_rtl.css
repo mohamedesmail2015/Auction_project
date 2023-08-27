@@ -867,6 +867,12 @@ ul {
   margin: 10px;
 }
 
+paginatio.pagination {
+  margin: 20px auto !important;
+  align-items: center;
+  justify-content: center;
+}
+
 /***********************************************************/
 /***************** End All Auctions PAGE ****************/
 /***********************************************************/
@@ -954,7 +960,12 @@ ul {
   width: 70px;
   border-radius: 50px;
 }
+
 .review .review_title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  justify-content: space-between;
   text-align: start;
   padding: 10px;
   margin: 10px 5px;
@@ -962,77 +973,34 @@ ul {
   border-radius: 20px;
   box-shadow: 2px 2px 4px rgba(110, 99, 99, 0.3);
 }
-.review .review_title p {
-  padding: 0;
-  margin-bottom: 5px;
+
+.review_title_name,
+.review_title_price {
+  align-items: center !important;
+  text-align: center !important;
+  justify-content: center !important;
 }
-.review .review_title .apply {
-  display: flex;
-  text-align: start;
-  justify-content: space-between;
+
+.review_title_name p {
+  margin: 5px;
 }
-.review .review_title .apply button {
-  color: #ffffff;
-  height: 40px;
-  border-radius: 5px;
-  padding: 5px 25px 10px;
-  margin: 0 10px;
-  background: #00aeef;
-  border: 1px solid #00aeef;
-}
-.review .review_title .apply button a {
-  color: #ffffff;
+
+.review_title_price p {
+  margin: 20px 5px;
 }
 
 .review_comment {
-  width: 95%;
-  margin: 20px auto;
-  border-radius: 20px;
-  border: 1px solid #000;
-}
-
-.review_comment input {
-  display: block;
-  width: 97%;
-  padding: 10px;
-  margin: 10px auto 20px;
-  outline: none;
-  border: none;
-}
-
-.review_comment p {
-  padding: 0 15px;
-  text-align: end !important;
+  width: 20%;
 }
 
 .review_comment button {
+  width: 100%;
   color: #00aeef;
-  border-radius: 5px;
-  padding: 0;
   background: #ffffff;
-  border: none;
-}
-
-.review_comment button i {
-  font-size: 30px;
-}
-
-@media (max-width: 768px) {
-  .review .review_title .apply {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: start;
-    justify-content: start;
-  }
-  .review .review_title .apply button {
-    color: #ffffff;
-    height: 40px;
-    border-radius: 5px;
-    padding: 5px 25px 10px;
-    margin: 0;
-    background: #00aeef;
-    border: 1px solid #00aeef;
-  }
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #00aeef;
 }
 
 /***********************************************************/
