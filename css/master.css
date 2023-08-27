@@ -1012,11 +1012,11 @@ ul {
 }
 
 .review_comment {
-  width: 20%;
+  width: 20% !important;
 }
 
 .review_comment button {
-  width: 100%;
+  width: 100% !important;
   height: 40px;
   color: #00aeef;
   background: #ffffff;
